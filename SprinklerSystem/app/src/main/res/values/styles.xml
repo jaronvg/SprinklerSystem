@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PreferencesTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">#2D6268</item>
+        <item name="android:textColor">#B7D3CF</item>
+        <item name="android:textColorSecondary">#C0D1CF</item>
+        <item name="android:colorControlNormal">#C0D1CF</item>
+        <item name="android:colorControlActivated">#B7D3CF</item>
+        <item name="android:colorAccent">#C0D1CF</item>
+    </style>
+</resources>

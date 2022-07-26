@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D6268"
+    tools:context=".progMode">
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="createProg"
+        android:text="@string/create"
+        android:buttonTint="#B7D3CF"
+        android:textColor="#B7D3CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:onClick="switchToSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/gearcustom"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/program_mode"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ScrollView
+        android:id="@+id/progScoll"
+        android:layout_width="414dp"
+        android:layout_height="648dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@drawable/rounded_box_light"
+        android:visibility="gone"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/scrollLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prog_number"
+                android:padding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#2D6268"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName10"
+                android:layout_width="402dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/prog_number"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#2D6268" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:text="@string/zones"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#2D6268"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/switch20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkForRuntime"
+                android:text="@string/zone1" />
+
+            <Switch
+                android:id="@+id/switch21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkForRuntime"
+                android:text="@string/zone2" />
+
+            <Switch
+                android:id="@+id/switch22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkForRuntime"
+                android:text="@string/zone3" />
+
+            <Switch
+                android:id="@+id/switch23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkForRuntime"
+                android:text="@string/zone4" />
+
+            <Switch
+                android:id="@+id/switch24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkForRuntime"
+                android:text="@string/zone5" />
+
+            <Switch
+                android:id="@+id/switch25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkForRuntime"
+                android:text="@string/zone6" />
+
+            <Switch
+                android:id="@+id/switch26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkForRuntime"
+                android:text="@string/zone7" />
+
+            <Switch
+                android:id="@+id/switch27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkForRuntime"
+                android:text="@string/zone8" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="checkAll"
+                android:text="@string/all" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#2D6268" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:text="@string/pick_days"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#2D6268"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/switch29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/sunday" />
+
+            <Switch
+                android:id="@+id/switch30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/monday" />
+
+            <Switch
+                android:id="@+id/switch31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/tuesday" />
+
+            <Switch
+                android:id="@+id/switch32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/wednesday" />
+
+            <Switch
+                android:id="@+id/switch33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/thursday" />
+
+            <Switch
+                android:id="@+id/switch34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/friday" />
+
+            <Switch
+                android:id="@+id/switch35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/saturday" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/all" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#2D6268" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:text="@string/pick_start_time"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#2D6268"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/start_time"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#2D6268" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:text="@string/pick_runtimes"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#2D6268"
+                android:visibility="gone"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_runtime1"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_runtime2"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_runtime3"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_runtime4"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_runtime5"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_runtime6"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_runtime7"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_runtime8"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="viewStart"
+                android:textColorHint="#455A64"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:background="#2D6268" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custome_button"
+                android:onClick="confirmProg"
+                android:text="@string/confirm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.976" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

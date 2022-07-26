@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <androidx.preference.PreferenceCategory
+        android:title="Notifications">
+    <androidx.preference.CheckBoxPreference
+        android:defaultValue="true"
+        android:key="example_checkbox"
+        android:summary="Enable to receive push notifications"
+        android:title="Notifications" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.SwitchPreference
+        android:defaultValue="true"
+        android:key="example_switch"
+        android:summary="Turn this option on or off"
+        android:title="Settings option" />
+    <androidx.preference.DropDownPreference
+        android:title="@string/clock_format"
+        android:key="dropDown1"
+        android:entries="@array/clock_format_items"
+        android:entryValues="@array/clock_format_items"
+        android:summary="f"
+        />
+</androidx.preference.PreferenceScreen>
