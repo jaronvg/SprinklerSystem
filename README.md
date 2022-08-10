@@ -31,4 +31,4 @@ NOTICE: To download the application to an android device, the device must have d
 3. Open the file in the "OnboardCode" folder called "firstTest.ino".
 4. Make sure the Arduino Uno is connected via USB to flash the program to the device. 
 
-The following shows the pinout of the hardware devices used:
+The pinout used will be provided ASAP.
