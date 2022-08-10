@@ -6,20 +6,12 @@
 
 using namespace std;
 
-//Notes
-//CHANGE
-//For auto switch time to 10-15. Time 4 digit stored with 
-//NULL at end and no colon. OR only store time once like
-//in program
-
-
 //Memory on 1-8 address are zones
 //0: inactive, 0: 1 active/waiting, 2: running.
 
 //Memory on 9 address: off mode
 
 //Auto time stored:
-//Reduce Space ?
 //Zone 1: 10 - 19 Start Time: 10: hr, 11: minute, 12: second, 13: month, 14: day, 15-16: year, 17: runtime
 //Zone 2: 20 - 29
 //Zone 3: 30 - 39
@@ -43,11 +35,6 @@ using namespace std;
 //D: Enter button.
 //*: ALL button (for use in modes)
 //#: EXIT button (for use to exit modes)
-
-//WORK ON
-//Save space by rewriting auto zones. Make time bytes
-//ADD DATE TO AUTO TIMES/SWITCH TIME AND DATE TO BYTES (year as int)
-//Ask: when making zone does it tset active by default?
 
 //Constants
 const int ROW_NUM = 4; //four rows
